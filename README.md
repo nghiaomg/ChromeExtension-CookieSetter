@@ -1,5 +1,7 @@
 # ChomeExtension-CookieSetter
 
+## Credit by nghiaomg
+
 Description
 The Cookie Setter is a powerful Chrome extension designed to simplify the process of setting cookies for web developers and testers. With a user-friendly interface, this tool allows you to easily set custom cookies for the current tab, streamlining your workflow for cookie-based testing and development tasks.
 Key Features
