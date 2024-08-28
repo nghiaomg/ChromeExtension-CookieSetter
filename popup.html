@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cookie Setter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            width: 300px;
+            padding: 10px;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+        
+        button {
+            margin-top: 10px;
+        }
+        
+        #currentUrl {
+            word-break: break-all;
+            margin-bottom: 10px;
+        }
+        
+        .button-setCookie {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+        }
+        
+        .button-setCookie a {
+            text-decoration-line: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="currentUrl"></div>
+    <textarea class="textarea textarea-primary" id="cookieInput" placeholder="Enter cookie string..."></textarea>
+    <div class="button-setCookie">
+        <button id="setCookies">Set Cookies</button>
+        <a target="_blank" href="https://github.com/nghiaomg">By nghiaomg</a>
+    </div>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
