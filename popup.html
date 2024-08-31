@@ -4,7 +4,6 @@
 <head>
     <title>Cookie Setter</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
         body {
@@ -36,6 +35,48 @@
         .button-setCookie a {
             text-decoration-line: underline;
         }
+        .saved-cookie-item {
+            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            padding: 0.25rem;
+            border-radius: 0.25rem;
+            border: 1px solid #a2a4a8;
+        }
+
+        .saved-cookie-item:hover {
+            background-color: #a2a4a8;
+            color: white;
+        }
+        
+        .history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .history-cookies-heading {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .clear-all-button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .clear-all-button:hover {
+            background-color: #d32f2f;
+        }
+
     </style>
 </head>
 
@@ -47,6 +88,11 @@
         <a target="_blank" href="https://github.com/nghiaomg">By nghiaomg</a>
     </div>
     <div id="status"></div>
+    <div class="history-header">
+        <h3 class="history-cookies-heading">History Cookies:</h3>
+        <button id="clearAllCookies" class="clear-all-button">Clear All</button>
+    </div>
+    <ul id="savedCookieList" class="text-sm"></ul>
     <script src="popup.js"></script>
 </body>
 
