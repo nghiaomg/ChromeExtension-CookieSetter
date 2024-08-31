@@ -29,7 +29,6 @@ Cookie Setter là tiện ích mở rộng Chrome mạnh mẽ được thiết k�
 
 ## Trường hợp sử dụng
 
-<<<<<<< HEAD
 - Kiểm tra phát triển web
 - Mô phỏng phiên
 - Kiểm tra cá nhân hóa trải nghiệm người dùng
@@ -42,9 +41,3 @@ Cookie Setter là tiện ích mở rộng Chrome mạnh mẽ được thiết k�
 2. Mở Chrome và điều hướng đến chrome://extensions/
 3. Bật "Chế độ nhà phát triển"
 4. Nhấp vào "Tải đã giải nén"
-=======
-Contribution
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
-License
-MIT License
->>>>>>> 8592a8280f34ba9e965fa80013360b5307ea1db7
