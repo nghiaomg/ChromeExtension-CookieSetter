@@ -7,13 +7,41 @@
 
     <style>
         body {
-            width: 300px;
+            width: 320px;
             padding: 10px;
+        }
+        
+        .cookie-input-container {
+            position: relative;
+            margin-bottom: 10px;
         }
         
         textarea {
             width: 100%;
             height: 100px;
+            padding-right: 60px;
+        }
+        
+        .copy-button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            z-index: 10;
+        }
+        
+        .copy-button:hover {
+            background-color: #45a049;
+        }
+        
+        .copy-button.copied {
+            background-color: #2196F3;
         }
         
         button {
@@ -23,6 +51,12 @@
         #currentUrl {
             word-break: break-all;
             margin-bottom: 10px;
+        }
+        
+        .current-cookies-label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #333;
         }
         
         .button-setCookie {
@@ -82,7 +116,11 @@
 
 <body>
     <div id="currentUrl"></div>
-    <textarea class="textarea textarea-primary" id="cookieInput" placeholder="Enter cookie string..."></textarea>
+    <div class="current-cookies-label">Current Cookies:</div>
+    <div class="cookie-input-container">
+        <textarea class="textarea textarea-primary" id="cookieInput" placeholder="Current cookies will appear here..."></textarea>
+        <button id="copyCookies" class="copy-button">Copy</button>
+    </div>
     <div class="button-setCookie">
         <button id="setCookies">Set Cookies</button>
         <a target="_blank" href="https://github.com/nghiaomg">By nghiaomg</a>
